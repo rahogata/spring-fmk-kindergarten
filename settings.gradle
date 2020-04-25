@@ -1,0 +1,3 @@
+include 'spring-core-play',
+        'spring-context-caching'
+

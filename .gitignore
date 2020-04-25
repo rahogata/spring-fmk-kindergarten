@@ -1,0 +1,10 @@
+# Eclipse IDE files
+.classpath
+.project
+.settings/
+
+# Java plugin files
+build/
+
+# Gradle files
+.gradle/
