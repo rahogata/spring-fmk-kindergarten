@@ -1,3 +1,4 @@
 include 'spring-core-play',
-        'spring-context-caching'
+        'spring-context-caching',
+        'spring-data-access'
 
