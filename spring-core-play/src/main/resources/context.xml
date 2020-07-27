@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+	<bean id="tapRoot" class="in.co.rahogata.ioc.beans.Root">
+		<property name="type" value="taproot" />
+		<property name="lifeTime" value="100" />
+	</bean>
+
+	<bean id="fibrous" class="in.co.rahogata.ioc.beans.Root">
+		<constructor-arg value="fibrous" />
+		<constructor-arg type="int" value="200" />
+	</bean>
+
+	<bean id="treeFactory"
+		class="in.co.rahogata.ioc.factory.TreeFactory"
+		factory-method="createInstance">
+		<constructor-arg value="neem" />
+		<constructor-arg ref="tapRoot" />
+	</bean>
+</beans>
